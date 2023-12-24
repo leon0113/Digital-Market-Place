@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
+import { ArrowDownToLine, CheckCircle, Sprout } from "lucide-react";
 import Link from "next/link";
 
 const perks = [
@@ -16,7 +16,7 @@ const perks = [
   },
   {
     name: "For The Plant",
-    Icon: Leaf,
+    Icon: Sprout,
     description: `We've pleged 1% of sales to the preservation and restoration of the natural environment.`,
   },
 ]
