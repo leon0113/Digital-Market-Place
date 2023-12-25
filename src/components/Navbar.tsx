@@ -18,7 +18,7 @@ export default function Navbar() {
                         <div className='flex h-16 items-center'>
                             {/* TODO: mobile nav  */}
                             {/* ---------LOGO-----------  */}
-                            <div className='ml-4  flex lg:ml-0'>
+                            <div className='ml-4      flex lg:ml-0'>
                                 <Link href={'/'}>
                                     <Icons.logo className='h-10 w-10' />
                                 </Link>

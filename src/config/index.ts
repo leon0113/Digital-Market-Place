@@ -4,7 +4,7 @@ export const PRODUCT_CATEGORIES = [
         value: "ui_kits" as const,
         featured: [
             {
-                name: "Editor picks",
+                name: "Editor Picks",
                 href: '#',
                 imageSrc: '/nav/ui-kits/mixed.jpg'
             },

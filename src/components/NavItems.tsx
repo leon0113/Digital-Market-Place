@@ -8,7 +8,7 @@ import { useOnClickOutside } from "@/hooks/use-on-click-outside";
 export default function NavItems() {
     const [activeIndex, setActiveIndex] = useState<null | number>(null);
 
-    const isAnyOpen = activeIndex !== null;
+    const isAnyOpen = activeIndex !== null; //initally false as activeIndex inital value is null
 
     // for esc button to operate
     useEffect(() => {
