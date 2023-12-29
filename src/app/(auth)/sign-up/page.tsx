@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
 import { AuthCredentialsSchema, TAuthCredentialsSchema } from '@/lib/validators/sign-up-validatiors'
+import { trpc } from '@/trpc/client'
 import { zodResolver } from '@hookform/resolvers/zod'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
@@ -17,9 +18,11 @@ export default function SignUp() {
         resolver: zodResolver(AuthCredentialsSchema),
     })
 
+    const { mutate, isLoading } = trpc.auth.createPayloadUser.useMutation({})
 
     const onSubmit = ({ email, password }: TAuthCredentialsSchema) => {
         // send data to server
+        mutate({ email, password })
     }
 
     return (
